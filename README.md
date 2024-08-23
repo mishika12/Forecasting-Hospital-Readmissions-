@@ -2,14 +2,23 @@
 
 
 ### <ins> Problem Statement
-The analysis aims to address two key objectives:
+The goal is to predict emergency department (ED) readmissions using a dataset containing patient information. The problem involves handling missing values, building predictive models, and evaluating their performance to identify the likelihood of readmission.
 
-1. Visualize the Impact of Machine Learning Models: Illustrate how different machine learning models can be used to predict hospital readmissions and compare their effectiveness   
-2. Classify Readmission Risk: Determine whether patients are at high risk of being readmitted to the hospital within a specified timeframe based on their medical history and other relevant features
+<ins> Methodology
+1. Data Preparation and Handling Missing Values:
 
+> Load and inspect the dataset to understand its structure and identify missing values.  
+> Address missing values through various strategies: imputation using mean, mode, zero values, and indicator variables for missingness.  
+> Apply advanced imputation techniques (e.g., using the mice package) to fill in missing data based on relationships with other variables.  
 
-### <ins> Methodology
+2. Model Building and Evaluation:  
 
-• For Visualization: The project uses synthetic data to demonstrate how various machine learning models, including decision trees and ensemble methods, can be applied to predict readmission risk. The visualization highlights how these models manage complex, non-linear relationships in the data. 
+> Develop predictive models including logistic regression, LASSO logistic regression, classification trees (CART), and random forests.  
+> Split the data into training and test sets to train and evaluate models.  
+> Assess model performance using accuracy, ROC curves, confusion matrices, and variable importance to determine the best model for predicting readmissions.  
+  
+3. Incorporating Additional Features:  
 
-• For Classification: The project utilizes a real-world hospital readmission dataset to build and evaluate multiple models—such as Logistic Regression, Random Forest, and Gradient Boosting. Hyperparameter tuning is performed to optimize each model's performance. The best-performing model is selected based on evaluation metrics like accuracy, precision, recall, F1 score, and ROC curve.  
+> Enhance the models by integrating additional features derived from lab records.  
+> Merge these features with the existing dataset and rebuild the models.  
+> Re-evaluate model performance with the new features to assess improvements in prediction accuracy and overall model effectiveness.  
