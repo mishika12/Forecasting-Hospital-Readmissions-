@@ -4,7 +4,7 @@
 ### <ins> Problem Statement
 The goal is to predict emergency department (ED) readmissions using a dataset containing patient information. The problem involves handling missing values, building predictive models, and evaluating their performance to identify the likelihood of readmission.
 
-<ins> Methodology
+### <ins> Methodology
 1. Data Preparation and Handling Missing Values:
 
 > Load and inspect the dataset to understand its structure and identify missing values.  
